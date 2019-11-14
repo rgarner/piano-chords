@@ -1,0 +1,27 @@
+body {
+  background: white;
+  color: black;
+}
+
+th {
+  color: black;
+}
+
+.table.table-chords th[scope=col] {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+  border-right: 1px solid #dadadd;
+}
+
+.table.table-chords button {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+section.chord-type {
+    break-after: page;
+}

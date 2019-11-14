@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/overrides.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
     <title>Piano scale chords</title>
@@ -17,140 +18,144 @@
     <section class="row chord-type">
         <div class="col-12"><h2>Major keys</h2>
             <table class="table table-chords table-responsive-sm">
-                <tr>
-                    <!--                    ♭	Flat Sign	U + 266D;	&#9837;-->
-                    <!--                    ♮	Natural Sign	U + 266E;	&#9838;-->
-                    <!--                    ♯	Sharp Sign	U + 266F;	&#9839;-->
-<!--                     W W H W W W H -->
-                    <th scope="col"></th>
-                    <th scope="col" class="step-whole">I</th>
-                    <th scope="col" class="step-whole">ii</th>
-                    <th scope="col" class="step-half">iii</th>
-                    <th scope="col" class="step-whole">IV</th>
-                    <th scope="col" class="step-whole">V</th>
-                    <th scope="col" class="step-whole">vi</th>
-                    <th scope="col">viiº</th>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">C</th>
-                    <td class="ch ch-maj"><button>C</button></td>
-                    <td class="ch ch-min"><button>Dm</button></td>
-                    <td class="ch ch-min"><button>Em</button></td>
-                    <td class="ch ch-maj"><button>F</button></td>
-                    <td class="ch ch-maj"><button>G</button></td>
-                    <td class="ch ch-min"><button>Am</button></td>
-                    <td class="ch ch-dim"><button>Bº</button></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">D♭</th>
-                    <td class="ch ch-maj"><button>D♭</button></td>
-                    <td class="ch ch-min"><button>E♭m</button></td>
-                    <td class="ch ch-min"><button>Fm</button></td>
-                    <td class="ch ch-maj"><button>G♭</button></td>
-                    <td class="ch ch-maj"><button>A♭</button></td>
-                    <td class="ch ch-min"><button>B♭m</button></td>
-                    <td class="ch ch-dim"><button>Cº</button></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">D</th>
-                    <td class="ch ch-maj"><button>D</button></td>
-                    <td class="ch ch-min"><button>Em</button></td>
-                    <td class="ch ch-min"><button>F♯m</button></td>
-                    <td class="ch ch-maj"><button>G</button></td>
-                    <td class="ch ch-maj"><button>A</button></td>
-                    <td class="ch ch-min"><button>Bm</button></td>
-                    <td class="ch ch-dim"><button>C♯º</button></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">E♭</th>
-                    <td class="ch ch-maj"><button>E♭</button></td>
-                    <td class="ch ch-min"><button>Fm</button></td>
-                    <td class="ch ch-min"><button>Gm</button></td>
-                    <td class="ch ch-maj"><button>A♭</button></td>
-                    <td class="ch ch-maj"><button>B♭</button></td>
-                    <td class="ch ch-min"><button>Cm</button></td>
-                    <td class="ch ch-dim"><button>Dº</button></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">E</th>
-                    <td class="ch ch-maj"><button>E</button></td>
-                    <td class="ch ch-min"><button>F♯m</button></td>
-                    <td class="ch ch-min"><button>G♯m</button></td>
-                    <td class="ch ch-maj"><button>A</button></td>
-                    <td class="ch ch-maj"><button>B</button></td>
-                    <td class="ch ch-min"><button>C♯m</button></td>
-                    <td class="ch ch-dim"><button>D♯º</button></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">F</th>
-                    <td class="ch ch-maj"><button>F</button></td>
-                    <td class="ch ch-min"><button>Gm</button></td>
-                    <td class="ch ch-min"><button>Am</button></td>
-                    <td class="ch ch-maj"><button>B♭</button></td>
-                    <td class="ch ch-maj"><button>C</button></td>
-                    <td class="ch ch-min"><button>Dm</button></td>
-                    <td class="ch ch-dim"><button>Eº</button></td>
-                </tr>
-                <tr>
-                    <th scope="row" class="scale">F♯</th>
-                    <td class="ch ch-maj"><button>F♯</button></td>
-                    <td class="ch ch-min"><button>G♯m</button></td>
-                    <td class="ch ch-min"><button>A♯m</button></td>
-                    <td class="ch ch-maj"><button>B</button></td>
-                    <td class="ch ch-maj"><button>C♯</button></td>
-                    <td class="ch ch-min"><button>D♯m</button></td>
-                    <td class="ch ch-dim"><button>Fº</button></td>
-                </tr>                
-                <tr>
-                    <th scope="row" class="scale">G</th>
-                    <td class="ch ch-maj"><button>G</button></td>
-                    <td class="ch ch-min"><button>Am</button></td>
-                    <td class="ch ch-min"><button>Bm</button></td>
-                    <td class="ch ch-maj"><button>C</button></td>
-                    <td class="ch ch-maj"><button>D</button></td>
-                    <td class="ch ch-min"><button>Em</button></td>
-                    <td class="ch ch-dim"><button>F♯º</button></td>
-                </tr>                
-                <tr>
-                    <th scope="row" class="scale">A♭</th>
-                    <td class="ch ch-maj"><button>A♭</button></td>
-                    <td class="ch ch-min"><button>B♭m</button></td>
-                    <td class="ch ch-min"><button>Cm</button></td>
-                    <td class="ch ch-maj"><button>D♭</button></td>
-                    <td class="ch ch-maj"><button>E♭</button></td>
-                    <td class="ch ch-min"><button>Fm</button></td>
-                    <td class="ch ch-dim"><button>Gº</button></td>
-                </tr>                
-                <tr>
-                    <th scope="row" class="scale">A</th>
-                    <td class="ch ch-maj"><button>A</button></td>
-                    <td class="ch ch-min"><button>Bm</button></td>
-                    <td class="ch ch-min"><button>C♯m</button></td>
-                    <td class="ch ch-maj"><button>D</button></td>
-                    <td class="ch ch-maj"><button>E</button></td>
-                    <td class="ch ch-min"><button>F♯m</button></td>
-                    <td class="ch ch-dim"><button>G♯º</button></td>
-                </tr>                
-                <tr>
-                    <th scope="row" class="scale">B♭</th>
-                    <td class="ch ch-maj"><button>B♭</button></td>
-                    <td class="ch ch-min"><button>Cm</button></td>
-                    <td class="ch ch-min"><button>Dm</button></td>
-                    <td class="ch ch-maj"><button>Eb</button></td>
-                    <td class="ch ch-maj"><button>F</button></td>
-                    <td class="ch ch-min"><button>Gm</button></td>
-                    <td class="ch ch-dim"><button>Aº</button></td>
-                </tr>                
-                <tr>
-                    <th scope="row" class="scale">B</th>
-                    <td class="ch ch-maj"><button>B</button></td>
-                    <td class="ch ch-min"><button>C♯m</button></td>
-                    <td class="ch ch-min"><button>D♯m</button></td>
-                    <td class="ch ch-maj"><button>E</button></td>
-                    <td class="ch ch-maj"><button>F♯</button></td>
-                    <td class="ch ch-min"><button>G♯m</button></td>
-                    <td class="ch ch-dim"><button>A♯º</button></td>
-                </tr>                
+                <thead>
+                    <tr>
+                        <!--                    ♭	Flat Sign	U + 266D;	&#9837;-->
+                        <!--                    ♮	Natural Sign	U + 266E;	&#9838;-->
+                        <!--                    ♯	Sharp Sign	U + 266F;	&#9839;-->
+                        <!--                     W W H W W W H -->
+                        <th scope="col"></th>
+                        <th scope="col" class="step-whole">I</th>
+                        <th scope="col" class="step-whole">ii</th>
+                        <th scope="col" class="step-half">iii</th>
+                        <th scope="col" class="step-whole">IV</th>
+                        <th scope="col" class="step-whole">V</th>
+                        <th scope="col" class="step-whole">vi</th>
+                        <th scope="col">viiº</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="scale">C</th>
+                        <td class="ch ch-maj"><button>C</button></td>
+                        <td class="ch ch-min"><button>Dm</button></td>
+                        <td class="ch ch-min"><button>Em</button></td>
+                        <td class="ch ch-maj"><button>F</button></td>
+                        <td class="ch ch-maj"><button>G</button></td>
+                        <td class="ch ch-min"><button>Am</button></td>
+                        <td class="ch ch-dim"><button>Bº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">D♭</th>
+                        <td class="ch ch-maj"><button>D♭</button></td>
+                        <td class="ch ch-min"><button>E♭m</button></td>
+                        <td class="ch ch-min"><button>Fm</button></td>
+                        <td class="ch ch-maj"><button>G♭</button></td>
+                        <td class="ch ch-maj"><button>A♭</button></td>
+                        <td class="ch ch-min"><button>B♭m</button></td>
+                        <td class="ch ch-dim"><button>Cº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">D</th>
+                        <td class="ch ch-maj"><button>D</button></td>
+                        <td class="ch ch-min"><button>Em</button></td>
+                        <td class="ch ch-min"><button>F♯m</button></td>
+                        <td class="ch ch-maj"><button>G</button></td>
+                        <td class="ch ch-maj"><button>A</button></td>
+                        <td class="ch ch-min"><button>Bm</button></td>
+                        <td class="ch ch-dim"><button>C♯º</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">E♭</th>
+                        <td class="ch ch-maj"><button>E♭</button></td>
+                        <td class="ch ch-min"><button>Fm</button></td>
+                        <td class="ch ch-min"><button>Gm</button></td>
+                        <td class="ch ch-maj"><button>A♭</button></td>
+                        <td class="ch ch-maj"><button>B♭</button></td>
+                        <td class="ch ch-min"><button>Cm</button></td>
+                        <td class="ch ch-dim"><button>Dº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">E</th>
+                        <td class="ch ch-maj"><button>E</button></td>
+                        <td class="ch ch-min"><button>F♯m</button></td>
+                        <td class="ch ch-min"><button>G♯m</button></td>
+                        <td class="ch ch-maj"><button>A</button></td>
+                        <td class="ch ch-maj"><button>B</button></td>
+                        <td class="ch ch-min"><button>C♯m</button></td>
+                        <td class="ch ch-dim"><button>D♯º</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">F</th>
+                        <td class="ch ch-maj"><button>F</button></td>
+                        <td class="ch ch-min"><button>Gm</button></td>
+                        <td class="ch ch-min"><button>Am</button></td>
+                        <td class="ch ch-maj"><button>B♭</button></td>
+                        <td class="ch ch-maj"><button>C</button></td>
+                        <td class="ch ch-min"><button>Dm</button></td>
+                        <td class="ch ch-dim"><button>Eº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">F♯</th>
+                        <td class="ch ch-maj"><button>F♯</button></td>
+                        <td class="ch ch-min"><button>G♯m</button></td>
+                        <td class="ch ch-min"><button>A♯m</button></td>
+                        <td class="ch ch-maj"><button>B</button></td>
+                        <td class="ch ch-maj"><button>C♯</button></td>
+                        <td class="ch ch-min"><button>D♯m</button></td>
+                        <td class="ch ch-dim"><button>Fº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">G</th>
+                        <td class="ch ch-maj"><button>G</button></td>
+                        <td class="ch ch-min"><button>Am</button></td>
+                        <td class="ch ch-min"><button>Bm</button></td>
+                        <td class="ch ch-maj"><button>C</button></td>
+                        <td class="ch ch-maj"><button>D</button></td>
+                        <td class="ch ch-min"><button>Em</button></td>
+                        <td class="ch ch-dim"><button>F♯º</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">A♭</th>
+                        <td class="ch ch-maj"><button>A♭</button></td>
+                        <td class="ch ch-min"><button>B♭m</button></td>
+                        <td class="ch ch-min"><button>Cm</button></td>
+                        <td class="ch ch-maj"><button>D♭</button></td>
+                        <td class="ch ch-maj"><button>E♭</button></td>
+                        <td class="ch ch-min"><button>Fm</button></td>
+                        <td class="ch ch-dim"><button>Gº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">A</th>
+                        <td class="ch ch-maj"><button>A</button></td>
+                        <td class="ch ch-min"><button>Bm</button></td>
+                        <td class="ch ch-min"><button>C♯m</button></td>
+                        <td class="ch ch-maj"><button>D</button></td>
+                        <td class="ch ch-maj"><button>E</button></td>
+                        <td class="ch ch-min"><button>F♯m</button></td>
+                        <td class="ch ch-dim"><button>G♯º</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">B♭</th>
+                        <td class="ch ch-maj"><button>B♭</button></td>
+                        <td class="ch ch-min"><button>Cm</button></td>
+                        <td class="ch ch-min"><button>Dm</button></td>
+                        <td class="ch ch-maj"><button>Eb</button></td>
+                        <td class="ch ch-maj"><button>F</button></td>
+                        <td class="ch ch-min"><button>Gm</button></td>
+                        <td class="ch ch-dim"><button>Aº</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="scale">B</th>
+                        <td class="ch ch-maj"><button>B</button></td>
+                        <td class="ch ch-min"><button>C♯m</button></td>
+                        <td class="ch ch-min"><button>D♯m</button></td>
+                        <td class="ch ch-maj"><button>E</button></td>
+                        <td class="ch ch-maj"><button>F♯</button></td>
+                        <td class="ch ch-min"><button>G♯m</button></td>
+                        <td class="ch ch-dim"><button>A♯º</button></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </section>
