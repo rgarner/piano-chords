@@ -1,0 +1,84 @@
+body {
+    background-color: #383846;
+    color: white;
+    font-family: 'Titillium Web'
+}
+
+.row.chord-type {
+  margin-top: 1em;
+}
+
+.table.table-chords {
+    color: white;
+    background-color: #545569;
+    font-family: 'Titillium Web'    
+}
+
+.table.table-chords th {
+    text-align: center;
+    font-family: 'Titillium Web';
+}
+
+td.ch button {
+    background-color:#383846;
+    color: #dadadd;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 15px;
+    position: relative;
+    min-width: 70px;
+    transition: 0.2s;
+}
+
+td.ch button:hover {
+    background-color:#8b8ba2;
+}
+
+td.ch button:focus, td.ch button:focus{
+  outline: none;
+  box-shadow: 2px 2px 1px 1px rgba(255,255,255,0.8);
+}
+
+td.ch button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    min-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+td.ch-min button::before {
+   border-top: 3px solid #00a7e8; 
+}
+
+td.ch-maj button::before {
+   border-top: 3px solid #f78385; 
+}
+
+td.ch-dim button::before {
+   border-top: 3px solid #33b89b; 
+}
+
+
+td.scale {
+    vertical-align: inherit;
+    text-align: right;
+    font-weight: 600;
+}
+
+.step-whole::after {
+  position: absolute;
+  content: '➤';
+  margin-left: 2em;
+  color: #c3c3c3;
+
+}
+
+.step-half::after {
+  position: absolute;
+  margin-left: 2em;
+  content: '⇢';
+  color: #c3c3c3;
+}
