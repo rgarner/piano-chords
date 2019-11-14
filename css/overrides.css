@@ -1,7 +1,7 @@
 body {
     background-color: #383846;
     color: white;
-    font-family: 'Titillium Web'
+    font-family: 'Titillium Web', Helvetica, sans-serif;
 }
 
 .row.chord-type {
@@ -11,12 +11,14 @@ body {
 .table.table-chords {
     color: white;
     background-color: #545569;
-    font-family: 'Titillium Web'    
 }
 
-.table.table-chords th {
+.table.table-chords th[scope=col] {
     text-align: center;
-    font-family: 'Titillium Web';
+}
+
+td.ch {
+  text-align:center
 }
 
 td.ch button {
@@ -62,23 +64,44 @@ td.ch-dim button::before {
 }
 
 
-td.scale {
+th.scale {
     vertical-align: inherit;
     text-align: right;
     font-weight: 600;
+    min-width: 4em;
+}
+
+.table-chords th {
+  position: relative;  
 }
 
 .step-whole::after {
   position: absolute;
   content: '➤';
-  margin-left: 2em;
+  margin-left: 37%;
   color: #c3c3c3;
 
 }
 
 .step-half::after {
   position: absolute;
-  margin-left: 2em;
+  margin-left: 37%;
   content: '⇢';
   color: #c3c3c3;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 96%;
+  }
+
+  td.ch button {
+    min-width: 58px;
+  }
+}
+
+@media (min-width: 992px) {
+  td.ch button {
+    min-width: 96px;
+  }
 }
